@@ -36,6 +36,7 @@
 	
 	// programmatically add the page control
 	pageControl = [[DDPageControl alloc] init] ;
+    [pageControl setFrame:CGRectMake(0, 0, scrollView.bounds.size.width, scrollView.bounds.size.height)];
 	[pageControl setCenter: CGPointMake(self.view.center.x, self.view.bounds.size.height-30.0f)] ;
 	[pageControl setNumberOfPages: numberOfPages] ;
 	[pageControl setCurrentPage: 0] ;

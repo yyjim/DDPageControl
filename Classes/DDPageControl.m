@@ -225,22 +225,6 @@
 	[self setNeedsDisplay] ;
 }
 
-- (void)setFrame:(CGRect)aFrame
-{
-	// we do not allow the caller to modify the size struct in the frame so we compute it
-	aFrame.size = [self sizeForNumberOfPages: numberOfPages] ;
-	super.frame = aFrame ;
-}
-
-- (void)setBounds:(CGRect)aBounds
-{
-	// we do not allow the caller to modify the size struct in the bounds so we compute it
-	aBounds.size = [self sizeForNumberOfPages: numberOfPages] ;
-	super.bounds = aBounds ;
-}
-
-
-
 #pragma mark -
 #pragma mark UIPageControl methods
 
